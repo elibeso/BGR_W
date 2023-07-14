@@ -28,7 +28,7 @@
                     <div class="row">
                         <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
                             <a href="index.html" class="refe"><img src="images/logo-drop.png" alt="" class="logo"></a>
-                            <div class="dropdown dropdown-header">
+                            <div class="dropdown dropdown-header" id="open">
                                 <div class="dropdown-toggle" data-toggle="dropdown">
                                     <p class="menu-txt">País / Country</p>
                                     <span class="caret"></span>
@@ -128,6 +128,12 @@
                         </div>
                     </div>
                 </header>
+
+                <div id="popup" style="display: none;">
+                    <div class="content-popup">
+                        <p style="color: white; text-align: center; margin:0;">Escoge un país</p>
+                    </div>
+                </div>
 
                 <header class="navbar-fixed-top header-mobil visible-md visible-sm visible-xs">
                     <div class="container-fluid">
@@ -787,6 +793,19 @@
         <script type="text/javascript" src="js/header.js"></script>
         <script type="text/javascript" src="js/wow.js"></script>
         <script type="text/javascript" src="js/parsley/parsley.min.js"></script>
+
+        <script type="text/javascript">
+
+            $(document).ready(() => {
+                $("#open").hover(() => {
+                    $("#popup").fadeIn("slow");
+                })
+
+                $(".section-home, footer").hover(() => {
+                    $("#popup").fadeOut("slow");
+                })
+            })
+        </script>
 
         <!-- Animacion Scrooll -->
         <script type="text/javascript">

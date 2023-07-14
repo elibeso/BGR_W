@@ -107,6 +107,23 @@
 }
 /*----------------------------------*/
 
+#popup {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.content-popup {
+    /* margin: 0px auto; */
+    /* margin-top: 100px; */
+    position: relative;
+    padding: 5px;
+    width: 8%;
+    background: rgba(197, 197, 197, 0.8);
+    border-radius: 10px;
+}
+
 #container {
   margin: auto;
   width: 1300px;
