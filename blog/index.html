@@ -253,7 +253,7 @@
                     <!-- Section home --> 
 
                     <div class="section-tab wow fadeInRight" id="noticias">
-                        <div class="tab-pane fade in active">
+                        <div class="tab-pane active">
                             <div class="container-fluid">
                                 <div class="row">
                                 <div class="col-md-6 wow fadeInLeft align-left-c">
@@ -331,7 +331,7 @@
                  </div>  
 
 
-                <div class="section-tab wow fadeInRight filters filter-button-group fade in">
+                <div class="section-tab wow fadeInRight filters filter-button-group">
                 	<ul class="nav nav-tabs">
       
                 		<li class="active"><a href="javascript:void(0);" data-filter="recientes">Recientes</a></li>
@@ -339,7 +339,7 @@
                         <li><a href="javascript:void(0);" data-filter="competencias">Competencias</a></li>-->
                 	</ul>
                 </div>
-	                   <div id="container" class="isotope section-tab wow fadeInRight fade in">
+	                   <div id="container" class="isotope section-tab wow fadeInRight" style="margin: auto;">
     
 		                      <div class="grid-item" data-filter="recientes">
                               <img src="images/abril-1.png" class="img-fluid">
@@ -468,6 +468,25 @@
                 </div>
             </div>
 
+            <div class="text-center">
+                <a href="#myModal" class="trigger-btn" data-backdrop="static" data-keyboard="false">Click to Open Login Modal</a>
+            </div>   
+
+            <!-- Modal HTML -->
+            <div id="myModal" class="modal fade">
+                <div class="modal-dialog modal-login">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Selecciona un País</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
 
         <!-- Footer -->
         <footer class="wow slideInUp">
@@ -514,7 +533,7 @@
         <script type="text/javascript" src="../js/wow.js"></script>
         <script type="text/javascript" src="../js/parsley/parsley.min.js"></script>
 
-             <!-- Animacion Scrooll -->
+            <!-- Animacion Scrooll -->
         <script type="text/javascript">
             new WOW().init();
         </script>
@@ -533,6 +552,12 @@
             e.stopPropagation();
             e.preventDefault();
           });
+        });
+        </script>
+
+        <script type="text/javascript">
+            $( document ).ready(function() {
+            $('#myModal').modal({backdrop: 'static', keyboard: false})
         });
         </script>
         <script type="text/javascript">

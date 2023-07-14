@@ -474,6 +474,24 @@
 </div>
 </div>
 
+            <div class="text-center">
+                <a href="#myModal" class="trigger-btn" data-backdrop="static" data-keyboard="false">Click to Open Login Modal</a>
+            </div>   
+
+            <!-- Modal HTML -->
+            <div id="myModal" class="modal fade">
+                <div class="modal-dialog modal-login">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Selecciona un País</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Section Descarga-->
             <div class="section-descarga ">
                 <div class="container-fluid">
@@ -546,6 +564,11 @@
                     $(this).addClass("active");
                 });
             });
+        </script>
+        <script type="text/javascript">
+            $( document ).ready(function() {
+            $('#myModal').modal({backdrop: 'static', keyboard: false})
+        });
         </script>
         <script>
         $(document).ready(function(){
