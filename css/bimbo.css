@@ -105,7 +105,62 @@
     font-style: italic;
     font-display: swap;
 }
-/*----------------------------------*/
+
+/*================popup=============*/
+.modal {
+    position: fixed;
+    top: 0%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+}
+.fade.in {
+    opacity: 1;
+    background: rgb(0 0 0 / 60%);
+    backdrop-filter: blur(6px);
+}
+.modal-dialog {
+    width: 600px;
+    margin: 10% auto;
+}
+.modal-header {
+    padding: 15px;
+    border-bottom: 0px solid #e5e5e5;
+}
+.modal-content {
+    position: relative;
+    background-color: #222c44;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 6px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    color: #fff;
+    font-size: 31px;
+    text-align: center;
+    font-family: 'Source Sans Pro';
+    font-weight: 700;
+    border: 2px solid #244f70;
+}
+.close {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-shadow: 0 0px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .7;
+}
+----------------------------------*/
 
 #container {
   margin: auto;
@@ -309,7 +364,7 @@ h1.blog {
 .header-web {
     padding: 30px 50px;
     width: 100%;
-    z-index: 10;
+    z-index: 9999;
 }
 
 header .logo {
@@ -736,6 +791,13 @@ a.cerrar-form {
     .section-home h1 {
         margin: 0px 0px 15px 0px;
         font-size: 30px;
+    }
+    .modal-dialog {
+        width: auto;
+        margin: 25% auto;
+    }
+    .header-mobil {
+        z-index: 9999;
     }
     .panel-group-leg {
         margin-bottom: 20px;
@@ -1286,14 +1348,11 @@ a.cerrar-form {
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    width: width: max-content;
+    width: max-content;
     color: #fff;
     background-color: transparent;
     border-bottom: 3px solid #222848;
     cursor: pointer;
-}
-.language_es .section-tab .nav-tabs{
-    width: 600px;
 }
 
 .section-tab .nav .nav-item.active a {
@@ -2310,6 +2369,7 @@ footer p {
     margin: 0px 0px 0px 20px;
     font-size: 10px;
     color: #ffffff;
+    text-align: center;
 }
 
 @media (max-width: 992px) {
