@@ -1286,14 +1286,11 @@ a.cerrar-form {
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    width: width: max-content;
+    width: max-content;
     color: #fff;
     background-color: transparent;
     border-bottom: 3px solid #222848;
     cursor: pointer;
-}
-.language_es .section-tab .nav-tabs{
-    width: 600px;
 }
 
 .section-tab .nav .nav-item.active a {
@@ -2310,6 +2307,7 @@ footer p {
     margin: 0px 0px 0px 20px;
     font-size: 10px;
     color: #ffffff;
+    text-align: center;
 }
 
 @media (max-width: 992px) {
