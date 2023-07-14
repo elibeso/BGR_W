@@ -1293,7 +1293,7 @@ a.cerrar-form {
     cursor: pointer;
 }
 .language_es .section-tab .nav-tabs{
-    width: 600px;
+    width: min-content;
 }
 
 .section-tab .nav .nav-item.active a {
