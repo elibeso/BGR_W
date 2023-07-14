@@ -792,6 +792,13 @@ a.cerrar-form {
         margin: 0px 0px 15px 0px;
         font-size: 30px;
     }
+    .modal-dialog {
+        width: auto;
+        margin: 25% auto;
+    }
+    .header-mobil {
+        z-index: 9999;
+    }
     .panel-group-leg {
         margin-bottom: 20px;
         padding-left: 65px;
